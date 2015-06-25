@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PinCodeWindowController">
+            <connections>
+                <outlet property="aboutView" destination="gfY-kG-6cS" id="Uau-8c-lae"/>
+                <outlet property="animationView" destination="fPU-0g-aOp" id="P8S-I9-hB7"/>
+                <outlet property="lbDetail" destination="GwS-K9-IX6" id="pc8-rf-8Bt"/>
+                <outlet property="lbSubDetail" destination="lbZ-sH-yxw" id="yty-M5-csb"/>
+                <outlet property="symbol0" destination="aUK-58-4tF" id="DLO-8O-gXr"/>
+                <outlet property="symbol1" destination="5BB-F9-NAN" id="DeQ-a6-NF2"/>
+                <outlet property="symbol2" destination="2ZF-Dn-agN" id="a3C-ie-tIU"/>
+                <outlet property="symbol3" destination="VdT-dt-Yoa" id="gzC-7f-EUl"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="280" height="450"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <value key="minSize" type="size" width="280" height="450"/>
+            <value key="maxSize" type="size" width="280" height="450"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="450"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="gfY-kG-6cS">
+                        <rect key="frame" x="0.0" y="290" width="280" height="160"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kdU-tR-gh4">
+                                <rect key="frame" x="-2" y="66" width="284" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="F6p-SQ-cCr"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="ZSPinCodeWindowController" id="LhC-Lv-5vQ">
+                                    <font key="font" size="19" name="HelveticaNeue-Bold"/>
+                                    <color key="textColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kdU-tR-gh4" secondAttribute="trailing" id="gMh-Wk-dpP"/>
+                            <constraint firstItem="kdU-tR-gh4" firstAttribute="leading" secondItem="gfY-kG-6cS" secondAttribute="leading" id="pt4-y9-Zph"/>
+                            <constraint firstAttribute="height" constant="160" id="qr9-Ab-FMG"/>
+                            <constraint firstItem="kdU-tR-gh4" firstAttribute="top" secondItem="gfY-kG-6cS" secondAttribute="top" constant="66" id="ugw-zw-RCl"/>
+                        </constraints>
+                    </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-K9-IX6">
+                        <rect key="frame" x="-2" y="246" width="284" height="24"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Choose PIN code" id="S36-hW-U2z">
+                            <font key="font" size="19" name="HelveticaNeue-Bold"/>
+                            <color key="textColor" name="scrollBarColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbZ-sH-yxw">
+                        <rect key="frame" x="-2" y="213" width="284" height="25"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Input 4 numbers you use as PIN code" id="QGQ-Lt-JBD">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="fPU-0g-aOp" userLabel="AnimationView">
+                        <rect key="frame" x="0.0" y="135" width="280" height="60"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUK-58-4tF">
+                                <rect key="frame" x="39" y="1" width="32" height="32"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="img_pin_checked" id="Ru2-rF-9Ll"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5BB-F9-NAN">
+                                <rect key="frame" x="96" y="1" width="32" height="32"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="img_pin_unchecked" id="vG5-7Q-cdm"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ZF-Dn-agN">
+                                <rect key="frame" x="153" y="1" width="32" height="32"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="img_pin_unchecked" id="S9z-N4-kZc"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VdT-dt-Yoa">
+                                <rect key="frame" x="210" y="1" width="32" height="32"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="img_pin_unchecked" id="UfG-CA-B3E"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="2lL-FE-29k"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GwS-K9-IX6" firstAttribute="top" secondItem="gfY-kG-6cS" secondAttribute="bottom" constant="20" id="5p4-Qg-F6L"/>
+                    <constraint firstAttribute="trailing" secondItem="GwS-K9-IX6" secondAttribute="trailing" id="7dy-Nj-5hf"/>
+                    <constraint firstAttribute="bottom" secondItem="fPU-0g-aOp" secondAttribute="bottom" constant="135" id="84u-2y-Uzw"/>
+                    <constraint firstItem="gfY-kG-6cS" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="MMh-oO-RkA"/>
+                    <constraint firstAttribute="trailing" secondItem="gfY-kG-6cS" secondAttribute="trailing" id="MVM-a1-5NN"/>
+                    <constraint firstItem="fPU-0g-aOp" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="RRD-s6-LaP"/>
+                    <constraint firstAttribute="trailing" secondItem="fPU-0g-aOp" secondAttribute="trailing" id="RyU-HY-B83"/>
+                    <constraint firstItem="gfY-kG-6cS" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="bL5-xi-tn9"/>
+                    <constraint firstItem="GwS-K9-IX6" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="o0o-C7-0K4"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+    </objects>
+    <resources>
+        <image name="img_pin_checked" width="32" height="32"/>
+        <image name="img_pin_unchecked" width="32" height="32"/>
+    </resources>
+</document>
